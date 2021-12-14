@@ -1,0 +1,107 @@
+ 
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("imagen3.jpg");
+}
+.container h1{
+    color: #0300af;
+    font-weight:1000;
+    text-shadow:0 0 5px #ecff42,0 0 25px #ecff42,0 0 50px #ecff42,0 0 75px #ecff42;
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    top:25%;
+    left: 51%;
+    transform: translate(-50%,-80%);
+
+}
+.btn-group{
+    top:30%;
+    left:30%;
+    transform: translate(31%,1000%);
+
+}
+.calculadora-grid {
+    display: grid;
+    justify-content:center;
+    align-content:center;
+    min-height: 70vh;
+    grid-template-columns: repeat(4, 94px);
+    transform: translate(1%,15%);
+    grid-template-rows: minmax(50px, auto) repeat(5, 50px);
+}
+  
+.calculadora-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #d80a0a;
+    outline: none;
+    background-color: #067dcc;
+}
+  
+.calculadora-grid > button:hover {
+    background-color: rgba(40, 179, 40, 0.9);
+}
+  
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 8px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+  
+.output .previous-operand {
+    color: #000000;
+    font-size: 1.5rem;
+}
+  
+.output .current-operand {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position:absolute;
+    border-radius: 50%;
+    bottom: 50px;
+    right: -500px;
+    padding: 20px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 252, 252, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgb(97, 89, 89);
+    }
+}
+
+
+
+
+
+
